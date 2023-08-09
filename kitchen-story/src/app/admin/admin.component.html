@@ -1,0 +1,11 @@
+<div>
+    <h2>Admin Panel</h2>
+    <button (click)="addFoodItem(foodItem)">Add Food Item</button>
+    <ul>
+      <li *ngFor="let item of foodItems">
+        {{ item.name }} - {{ item.price }}
+        <button (click)="removeFoodItem(item.id)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  
